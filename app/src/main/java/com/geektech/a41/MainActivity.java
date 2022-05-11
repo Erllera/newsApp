@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         }
         Prefs prefs = new Prefs(this);
 
-        if (prefs.isShown()){
+        if (!prefs.isShown()){
             navController.navigate(R.id.boardFragment);
         }
 

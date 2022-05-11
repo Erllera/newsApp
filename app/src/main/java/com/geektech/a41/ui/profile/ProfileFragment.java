@@ -71,7 +71,7 @@ public class ProfileFragment extends Fragment {
                         FirebaseAuth.getInstance().signOut();
                         Toast.makeText(requireContext(), "Вы вышли из аккаунта", Toast.LENGTH_SHORT).show();
                         navController = Navigation.findNavController(requireActivity(), R.id.nav_host_fragment_activity_main);
-                        navController.navigate(R.id.loginFragment);
+                        navController.navigateUp();
                     }
                     return true;
                 }
